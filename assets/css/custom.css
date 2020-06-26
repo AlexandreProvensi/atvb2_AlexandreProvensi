@@ -1,39 +1,66 @@
-#admincontent {
-    margin-top: 40px;
-}
-
-#admincontent .table {
-    margin-top: 20px;
-}
-
-#admincontent thead .active {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-#admincontent .card-header,
-#admincontent .card-footer {
-    display: flex;
-}
-
-.spacer {
-    flex: 1 1 auto;
-}
-
-.conteudo {
-    margin-top: 40px;
-}
-
-.sign {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 450px;
-}
-
-.sign .card {
-    margin-bottom: 15px;
-}
-
-.sitecontent {
-    padding-top: 56px;
-}
+        #admincontent {
+            margin-top: 40px;
+        }
+        
+        #admincontent .table {
+            margin-top: 20px;
+        }
+        
+        #admincontent thead .active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        #admincontent .card-header,
+        #admincontent .card-footer {
+            display: flex;
+        }
+        
+        .spacer {
+            flex: 1 1 auto;
+        }
+        
+        .conteudo {
+            margin-top: 40px;
+        }
+        
+        .sign {
+            margin: 0 auto;
+            margin-top: 130px;
+            padding-top: 20px;
+            width: 450px;
+        }
+        
+        .sign .card {
+            margin-bottom: 15px;
+        }
+        
+        .card-body {
+            padding-top: 25px;
+        }
+        
+        .sitecontent {
+            padding-top: 56px;
+        }
+        
+        #icone {
+            width: 40px;
+        }
+        
+        #siteid {
+            padding-left: 900px
+        }
+        
+        #contato {
+            background-image: url('..//img/bkg_contato.png');
+            background-repeat: round;
+            padding: 4em 0;
+        }
+        
+        #copyright {
+            height: 0px;
+        }
+        
+        .sitecontent {
+            background-color: #F8F8F8F8;
+        }

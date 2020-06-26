@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contato - Sensuale Moda Íntima</title>
+
+    <!--Ícone da página-->
+    <link rel="icon" type="image/png" href="assets/img/icon_coracao.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--Meu CSS-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a href="/">
+                    <img style="margin-left: 110px" id="icone" src="assets/img/icon_coracao.png" alt="">
+                </a>
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!/contato">Fale Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!/signin">Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">Fale Conosco</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Envie sua mensagem para nós</h5>
+                            <p class="card-text">Preencha os campos abaixo, para nós entrarmos em contato contigo.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label>Nome Completo</label>
+                                    <input type="email" class="form-control" placeholder="Informe seu nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label>Telefone Celular</label>
+                                    <input type="fone" class="form-control" placeholder="(99)9 9999-9999">
+                                </div>
+                                <div class="form-group">
+                                    <label>Endereço de E-mail</label>
+                                    <input type="email" class="form-control" placeholder="Informe seu e-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label>Sua Cidade e UF</label>
+                                    <input type="text" class="form-control" placeholder="Pato Branco - PR">
+                                </div>
+                                <div class="form-group">
+                                    <label>Digite a sua mensagem</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" onclick="fmensagem()">Enviar Mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 bg-dark">
+        <div id="copyright" class="container">
+            <p id="copyright" class="m-0 text-center text-white">Todos os direitos &copy; Sensuale Moda Íntima 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script>
+        function fmensagem() {
+            alert("Mensagem Enviada com Sucesso!");
+            document.querySelectorAll('#contato input').forEach(input => {
+                input.value = '';
+            });
+            document.querySelector('#contato textarea').value = '';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -2,11 +2,17 @@
     <div class="collapse navbar-collapse">
         <div class="container">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#!/admin/categorias">Categorias</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cadastros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#!/admin/categorias">Categorias</a>
+                        <a class="dropdown-item" href="#!/admin/produtos">Produtos</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#!/admin/produtos">Produtos</a>
+                <li id="siteid" class="nav-item">
+                    <a class="nav-link" href="/">Site</a>
                 </li>
             </ul>
         </div>
@@ -17,7 +23,7 @@
         <div class="card-header">
             Cadastro de Categorias
             <span class="spacer"></span>
-            <button class="btn btn-primary btn-sm" ng-click="novo()" ng-show="showTable">Novo</button>
+            <button class="btn btn-success btn-sm" ng-click="novo()" ng-show="showTable">Novo</button>
         </div>
 
         <div class="card-body">
@@ -43,7 +49,7 @@
                     <tbody ng-if="categorias.length == 0">
                         <tr>
                             <td colspan="3">
-                                <p class="lead text-center text-muted">Nenhum categoria foi cadastrada</p>
+                                <p class="lead text-center text-muted">Nenhuma categoria foi cadastrada</p>
                             </td>
                         </tr>
                     </tbody>
